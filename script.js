@@ -60,9 +60,6 @@ criaPixel();
 
 color.classList.add('selected');
 
-// 1 criar uma função para criar um click para cada cor da paleta de cores
-// 2 a cor clicada deve receber a classe: selected
-
 const selecionaCor = () => {
   for (let i = 0; i < colorPalette.length; i += 1) {
     colorPalette[i].addEventListener('click', (event) => {
@@ -75,16 +72,27 @@ const selecionaCor = () => {
 
 selecionaCor();
 
-// 9 - Crie uma função para selecionar uma cor na paleta de cores.
-// A cor clicada deve ser a única selecionada na paleta de cores.
-// A cor clicada deve receber a classe selected e a cor previamente selecionada deve perder esta classe;
-
-// Somente uma das cores da paleta pode ter a classe selected de cada vez;
-
-// Os elementos que deverão receber a classe selected devem ser os mesmos elementos que possuem a classe color, como especificado no requisito 2.
+// 10 - Crie uma função que permita preencher um pixel do quadro com a cor selecionada na paleta de cores.
+// O pixel do quadro clicado deve ter sua cor alterada para a cor selecionada na paleta de cores
 
 // O que será testado:
 
-// Somente uma cor da paleta de cores pode ter a classe selected de cada vez;
+// Ao carregar a página deve ser possível pintar os pixels do quadro de preto;
 
-// Os pixels dentro do quadro não devem ter a classe selected quando são clicados.
+// Após selecionar outra cor na paleta de cores, é possível pintar os pixels do quadro com essa cor;
+
+// Somente o pixel que foi clicado deve ter a cor alterada, sem influenciar na cor dos demais pixels.
+
+const pixel = document.getElementsByClassName('pixel');
+
+const coloriPixel = () => {
+  for (let i = 0; i < pixel.length; i += 1) {
+    pixel[i].addEventListener('click', (event) => {
+      const selected = document.getElementsByClassName('selected')[0];
+      console.log(selected);
+      event.target.style.backgroundColor = selected.style.backgroundColor;
+    });
+  }
+};
+
+coloriPixel();
