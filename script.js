@@ -46,14 +46,6 @@ const recuperaCor = () => {
 
 recuperaCor();
 
-// REQUISITO 6
-// criar um id pixel-board OK
-// chamar o pixel-board no .js OK
-// criar 25 classes denominadas pixel dentro de pixel-boadr usando um for OK
-// cada pixel deve ser quadrado e branco OK
-// deve ser uma sequência de 5 pixel na horizontal e 5 pixel na vertical
-// o quadro de pixel deve aparecer abaixo da paleta
-
 const pixelBoard = document.getElementById('pixel-board');
 
 const criaPixel = () => {
@@ -65,3 +57,47 @@ const criaPixel = () => {
 };
 
 criaPixel();
+
+color.classList.add('selected');
+
+// 1 criar uma função para criar um click para cada cor da paleta de cores
+// 2 a cor clicada deve receber a classe: selected
+
+// const selecionaCor = () => {
+//   for (let i = 0; i < colorPalette.length; i += 1) {
+//       colorPalette[i].addEventListener('click', selecionaCor);
+//     }
+// }
+// };
+// colorPalette[i].addEventListener('click', selecionaCor);
+// selecionaCor();
+
+
+
+
+
+// 8 - Defina a cor preta como cor inicial da paleta de cores
+// A cor preta já deve estar selecionada na paleta para pintar os pixels do quadro ao iniciar a página.
+// O elemento que posteriormente deverá receber a classe selected deve ser um dos elementos que possuem a classe color, como especificado no requisito 2.
+
+// O elemento da cor preta deve possuir inicialmente a classe selected.
+
+// O que será testado:
+
+// O elemento da cor preta possui, inicialmente, a classe selected;
+
+// Nenhuma outra cor da paleta pode ter a classe selected ao carregar a página.
+
+// 9 - Crie uma função para selecionar uma cor na paleta de cores.
+// A cor clicada deve ser a única selecionada na paleta de cores.
+// A cor clicada deve receber a classe selected e a cor previamente selecionada deve perder esta classe;
+
+// Somente uma das cores da paleta pode ter a classe selected de cada vez;
+
+// Os elementos que deverão receber a classe selected devem ser os mesmos elementos que possuem a classe color, como especificado no requisito 2.
+
+// O que será testado:
+
+// Somente uma cor da paleta de cores pode ter a classe selected de cada vez;
+
+// Os pixels dentro do quadro não devem ter a classe selected quando são clicados.
