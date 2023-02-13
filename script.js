@@ -49,8 +49,8 @@ recuperaCor();
 // REQUISITO 6
 // criar um id pixel-board OK
 // chamar o pixel-board no .js OK
-// criar 25 classes denominadas pixel dentro de pixel-boadr usando um for
-// cada pixel deve ser quadrado e branco
+// criar 25 classes denominadas pixel dentro de pixel-boadr usando um for OK
+// cada pixel deve ser quadrado e branco OK
 // deve ser uma sequência de 5 pixel na horizontal e 5 pixel na vertical
 // o quadro de pixel deve aparecer abaixo da paleta
 

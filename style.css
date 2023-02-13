@@ -9,8 +9,9 @@
     width: 40px;
     height: 40px;
     background-color: white;
+    display: inline-block;
 }
 #pixel-board {
-    width: 250px;
-    height: 250px;
+    width: 210px;
+    height: 210px;
 }
