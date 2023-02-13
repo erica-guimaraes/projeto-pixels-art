@@ -63,30 +63,17 @@ color.classList.add('selected');
 // 1 criar uma função para criar um click para cada cor da paleta de cores
 // 2 a cor clicada deve receber a classe: selected
 
-// const selecionaCor = () => {
-//   for (let i = 0; i < colorPalette.length; i += 1) {
-//       colorPalette[i].addEventListener('click', selecionaCor);
-//     }
-// }
-// };
-// colorPalette[i].addEventListener('click', selecionaCor);
-// selecionaCor();
+const selecionaCor = () => {
+  for (let i = 0; i < colorPalette.length; i += 1) {
+    colorPalette[i].addEventListener('click', (event) => {
+      const corClicada = document.getElementsByClassName('selected')[0];
+      corClicada.classList.remove('selected');
+      event.target.classList.add('selected');
+    });
+  }
+};
 
-
-
-
-
-// 8 - Defina a cor preta como cor inicial da paleta de cores
-// A cor preta já deve estar selecionada na paleta para pintar os pixels do quadro ao iniciar a página.
-// O elemento que posteriormente deverá receber a classe selected deve ser um dos elementos que possuem a classe color, como especificado no requisito 2.
-
-// O elemento da cor preta deve possuir inicialmente a classe selected.
-
-// O que será testado:
-
-// O elemento da cor preta possui, inicialmente, a classe selected;
-
-// Nenhuma outra cor da paleta pode ter a classe selected ao carregar a página.
+selecionaCor();
 
 // 9 - Crie uma função para selecionar uma cor na paleta de cores.
 // A cor clicada deve ser a única selecionada na paleta de cores.
