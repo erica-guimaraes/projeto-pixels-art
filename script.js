@@ -72,17 +72,6 @@ const selecionaCor = () => {
 
 selecionaCor();
 
-// 10 - Crie uma função que permita preencher um pixel do quadro com a cor selecionada na paleta de cores.
-// O pixel do quadro clicado deve ter sua cor alterada para a cor selecionada na paleta de cores
-
-// O que será testado:
-
-// Ao carregar a página deve ser possível pintar os pixels do quadro de preto;
-
-// Após selecionar outra cor na paleta de cores, é possível pintar os pixels do quadro com essa cor;
-
-// Somente o pixel que foi clicado deve ter a cor alterada, sem influenciar na cor dos demais pixels.
-
 const pixel = document.getElementsByClassName('pixel');
 
 const coloriPixel = () => {
